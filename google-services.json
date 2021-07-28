@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "620572662026",
+    "project_id": "toubib-fe8dc",
+    "storage_bucket": "toubib-fe8dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620572662026:android:85078004951a9107ab42f3",
+        "android_client_info": {
+          "package_name": "com.example.phone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620572662026-9b71uva3atajrj6bkdfqsnkanp4dckj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWP6QxCSjMV1o-LHUwAMqOIpyro0_0i1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620572662026-9b71uva3atajrj6bkdfqsnkanp4dckj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

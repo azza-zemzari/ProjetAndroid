@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFFFF">
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:background="@drawable/rectangle_2"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textColor="@color/material_on_background_disabled"
+        app:layout_constraintBottom_toTopOf="@+id/pwdtextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtextView" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:background="@drawable/rectangle_2"
+        android:ems="10"
+        android:hint="mot de passe"
+        android:inputType="textPassword"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        app:layout_constraintBottom_toBottomOf="@id/forgetPW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pwdtextView"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/my_button_bg"
+        android:text="login"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/forgetPW"
+        android:layout_width="184dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:linksClickable="true"
+        android:text="  mot_de_passe_oubli"
+        android:textColor="#4FABF4"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/emailtextView"
+        android:layout_width="65dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="228dp"
+        android:text="  Email"
+        android:textColor="#4FABF4"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/pwdtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="    Mot de passe"
+        android:textColor="#4FABF4"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="494dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="67dp"
+        android:contentDescription="description"
+        app:layout_constraintBottom_toTopOf="@+id/emailtextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/header"
+        tools:srcCompat="@drawable/header" />
+
+    <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_begin="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
